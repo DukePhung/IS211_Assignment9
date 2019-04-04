@@ -1,3 +1,7 @@
+#!/usr/bin/env Python3
+# -*- coding: utf-8 -*-
+"""Parsing AAPL stock values."""
+
 from bs4 import BeautifulSoup
 import csv
 import urllib.request, urllib.parse, urllib.error

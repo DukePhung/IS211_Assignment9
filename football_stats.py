@@ -1,3 +1,7 @@
+#!/usr/bin/env Python3
+# -*- coding: utf-8 -*-
+"""Parsing football stats."""
+
 from bs4 import BeautifulSoup
 import csv
 import urllib.request, urllib.parse, urllib.error
@@ -10,6 +14,7 @@ soup = BeautifulSoup(html)
 
 trs = soup.find_all('tr')
 for tr in trs:
+    # f.writerow(tr)
     tds = tr.find_all('td')
     
     try:
